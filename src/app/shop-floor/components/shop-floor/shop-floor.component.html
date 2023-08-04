@@ -1,0 +1,10 @@
+<div class="shop-floor-component">
+  <div
+    [id]="unit.id"
+    class="unit-card"
+    *ngFor="let unit of units"
+    (click)="unitClicked(unit)"
+  >
+    {{ unit.unitName }}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="side-bar-component">
+  <div class="side-bar-option" (click)="goToHomePage()">Home</div>
+  <div class="side-bar-option" (click)="goToShopFloorPage()">ShopFloor</div>
+  <div class="side-bar-option" *ngIf="unit" (click)="goToInstructionView()">Instruction View</div>
+  <div class="side-bar-option" *ngIf="unit" (click)="goToProductionView()">Production View</div>
+</div>

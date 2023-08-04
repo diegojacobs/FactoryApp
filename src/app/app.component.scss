@@ -1,0 +1,10 @@
+.page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+
+  .router-container {
+    width: 100%;
+  }
+}

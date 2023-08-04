@@ -1,0 +1,53 @@
+.production-view-component {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .production-view-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  
+    width: 100%;
+    padding: 24px 0;
+    border: 1px solid #000000;
+    border-left: none;
+  }
+
+  .instruction-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 64px;
+
+    width: 100%;
+    padding: 32px 64px;
+
+    .instruction-running {
+      font-size: 32px;
+    }
+
+    .stop-button {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      margin: 0 auto;
+      padding: 24px 64px;
+      border: 1px solid #000000;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(112,181,249,0.2);
+      }
+    }
+  }
+
+  .no-instruction {
+    padding: 32px 64px;
+    font-size: 32px;
+  }
+}

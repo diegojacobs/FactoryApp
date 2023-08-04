@@ -1,0 +1,16 @@
+<div class="production-view-component" *ngIf="unit">
+  <div class="production-view-header">
+    {{ unit.unitName }}
+  </div>
+  <div class="instruction-container" *ngIf="instruction">
+    <div class="instruction-running">
+      Running: {{ instruction.name }}
+    </div>
+    <div class="stop-button" (click)="stopInstruction()">
+      STOP
+    </div>
+  </div>
+  <div class="no-instruction" *ngIf="!instruction">
+    No Instruction Running
+  </div>
+</div>

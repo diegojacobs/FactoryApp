@@ -1,0 +1,32 @@
+.side-bar-component {
+  border: 1px #000000 solid;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100px;
+
+  .side-bar-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 24px 0;
+
+    border-top: 1px #000000 solid;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: 1px #000000 solid;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(112,181,249,0.2);
+    }
+  }
+}

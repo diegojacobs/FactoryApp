@@ -1,0 +1,15 @@
+<div class="instructions-view-component" *ngIf="unit">
+  <div class="instructions-view-header">
+    {{ unit.unitName }}
+  </div>
+  <div class="instructions-container">
+    <div 
+      [id]="instruction.id"
+      class="unit-instruction-card"
+      *ngFor="let instruction of unitInstructions"
+      (click)="instructionClicked(instruction)"
+    >
+      {{ instruction.name }}
+    </div>
+  </div>
+</div>
